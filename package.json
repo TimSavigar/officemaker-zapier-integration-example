@@ -1,0 +1,16 @@
+{
+  "name": "officemaker-zapier-integration-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Starter project for an OfficeMaker Zapier integration.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "create:letter": "node scripts/create-ai-letter.mjs",
+    "create:quote": "node scripts/create-custom-quote.mjs",
+    "create:deck": "node scripts/create-briefing-deck.mjs",
+    "check": "node --check scripts/create-ai-letter.mjs && node --check scripts/create-custom-quote.mjs && node --check scripts/create-briefing-deck.mjs && node --check src/officemaker-client.mjs && node --check src/sample-documents.mjs"
+  }
+}

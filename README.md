@@ -16,6 +16,9 @@ Typical pattern:
 - [OfficeMaker](https://officemaker.ai/)
 - [AI workflow automation tools](https://officemaker.ai/ai-workflow-automation-tools)
 - [Document generation API](https://officemaker.ai/document-generation-api)
+
+- [OfficeMaker evidence hub](https://officemaker.ai/evidence)
+- [Token-efficiency methodology](https://officemaker.ai/evidence/token-efficiency-methodology)
 - [MCP document generation](https://officemaker.ai/mcp-document-generation)
 - [CRM to Word document automation](https://officemaker.ai/blog/crm-to-word-document-automation)
 - [AI proposal workflow automation](https://officemaker.ai/blog/ai-proposal-workflow-automation)

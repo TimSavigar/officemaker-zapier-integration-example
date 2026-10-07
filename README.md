@@ -1,6 +1,24 @@
-# OfficeMaker Zapier Integration Example
+# OfficeMaker + Zapier — AI document generation integration example
 
-Starter repository for a Zapier app that creates OfficeMaker documents through the public free API at `https://free.officemaker.ai`.
+This starter shows how a **Zapier** workflow can call **OfficeMaker** to create native Word (`.docx`), Excel (`.xlsx`) and PowerPoint (`.pptx`) files.
+
+The products solve different layers:
+
+- **Zapier** orchestrates triggers and actions across applications.
+- **OfficeMaker** is the document execution layer when the workflow must produce a real Microsoft Office file.
+
+Typical pattern:
+
+**CRM/form/app event → Zapier → structured JSON → OfficeMaker → DOCX/XLSX/PPTX → Zapier stores/sends/notifies**
+
+## Canonical OfficeMaker resources
+
+- [OfficeMaker](https://officemaker.ai/)
+- [AI workflow automation tools](https://officemaker.ai/ai-workflow-automation-tools)
+- [Document generation API](https://officemaker.ai/document-generation-api)
+- [MCP document generation](https://officemaker.ai/mcp-document-generation)
+- [CRM to Word document automation](https://officemaker.ai/blog/crm-to-word-document-automation)
+- [AI proposal workflow automation](https://officemaker.ai/blog/ai-proposal-workflow-automation)
 
 ## What is included
 
@@ -25,20 +43,21 @@ npm run create:deck
 
 ## How to use the Zapier starter
 
-The file `zapier/creates/createDocument.js` is a starter action definition for the Zapier platform team/CLI workflow. It assumes the payload already contains:
+The file `zapier/creates/createDocument.js` is a starter action definition. It assumes the payload already contains:
 
 - `document_type`
 - `file_name`
 - `document_json`
 
-That keeps the first integration small while we validate the platform fit around:
+This keeps the integration explicit: Zapier owns the workflow; OfficeMaker validates and creates the Office artifact.
 
-- AI-generated letters
-- custom quotes
-- proposal-style outputs
+## Important status
+
+This repository is an **integration example**, not a claim that OfficeMaker is currently published in the Zapier App Directory. Generic HTTP/webhook integration is the supported pattern represented here.
 
 ## Next build steps
 
 1. Add a full Zapier app scaffold around the starter action.
 2. Add schema lookup as a pre-step for richer builders.
-3. Add polished input field mapping for CRM-driven use cases.
+3. Add polished input mapping for CRM-driven proposals and reports.
+4. Pursue an official directory listing only after the integration meets Zapier's publishing requirements.
